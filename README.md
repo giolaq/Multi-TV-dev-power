@@ -1,7 +1,5 @@
 # Multi-TV Builder - AI-Powered Development Assistant
 
-> **Fork Notice**: This is a fork of the original [Multi-TV Builder Power](https://github.com/AmazonAppDev/react-native-multi-tv-app-sample) with added support for **Claude Code** (Anthropic's CLI). The original Kiro Power functionality is fully preserved.
-
 Build production-ready cross-platform TV applications with React Native - supporting Android TV, Apple TV, Fire TV (Fire OS & Vega OS), and Web TV platforms with a single codebase.
 
 ## What is This?
