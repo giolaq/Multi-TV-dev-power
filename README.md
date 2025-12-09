@@ -29,11 +29,11 @@ Once installed, the power activates automatically when you mention TV developmen
 
 ## Common Use Cases
 
-✅ **Building streaming video apps** (Netflix-like experiences)
-✅ **Content discovery platforms** (browse and explore content)
-✅ **TV-optimized interfaces** (10-foot UI design)
-✅ **Multi-platform TV deployment** (single codebase, multiple platforms)
-✅ **Learning TV development** (comprehensive examples and guides)
+- ✅ **Building streaming video apps** (Netflix-like experiences)
+- ✅ **Content discovery platforms** (browse and explore content)
+- ✅ **TV-optimized interfaces** (10-foot UI design)
+- ✅ **Multi-platform TV deployment** (single codebase, multiple platforms)
+- ✅ **Learning TV development** (comprehensive examples and guides)
 
 ---
 
