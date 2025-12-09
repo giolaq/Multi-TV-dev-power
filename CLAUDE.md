@@ -5,7 +5,8 @@ Build production-ready cross-platform TV applications with React Native - suppor
 ## Quick Reference
 
 - **Sample Repo**: https://github.com/AmazonAppDev/react-native-multi-tv-app-sample
-- **Slash Commands**: Use `/multi-tv-help`, `/multi-tv-setup`, `/multi-tv-build`, `/multi-tv-platform`
+- **Slash Commands**: `/multi-tv-help`, `/multi-tv-setup`, `/multi-tv-build`, `/multi-tv-platform`
+- **Skills**: `multi-tv-builder`, `apple-tv-troubleshooter`, `tmdb-integration`
 - **Author**: Giovanni Laquidara
 
 ## Core Capabilities
@@ -105,6 +106,16 @@ yarn typecheck        # Type check
 - Use FlatList for long scrolling lists
 - Implement image caching strategy
 - Lazy load video content
+
+## Available Skills
+
+| Skill | Purpose |
+|-------|---------|
+| `multi-tv-builder` | General TV app development guidance |
+| `apple-tv-troubleshooter` | tvOS-specific issues: Siri Remote, focus engine, TVEventHandler |
+| `tmdb-integration` | TMDB API integration: movies, TV shows, images, search |
+
+Skills activate automatically based on context. For Apple TV issues, ask about "Siri Remote", "TVFocusGuideView", or "tvOS focus problems". For TMDB, ask about "movie API", "poster images", or "trending content".
 
 ## Documentation
 
