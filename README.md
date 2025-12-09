@@ -39,7 +39,7 @@ Once installed, the power activates automatically when you mention TV developmen
 
 **Version**: 1.0.0
 **Author**: Giovanni Laquidara
-**Last Updated**: December 2024
+**Last Updated**: December 2025
 **Compatible with**: Kiro Developer Tools
 
 For detailed implementation guidance, see [POWER.md](./multi-tv-builder/POWER.md) and the [steering files](./multi-tv-builder/steering/).
