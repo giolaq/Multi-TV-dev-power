@@ -59,6 +59,15 @@ Located in `steering/` directory:
    - Development tools (ESLint, Prettier, Jest)
    - All development commands reference
 
+4. **VEGA_TO_MONOREPO_MIGRATION_GUIDE.md** - Vega Migration Guide (Manual inclusion)
+   - Step-by-step migration from Fire TV Vega-only apps to multi-platform monorepo
+   - Monorepo setup with Yarn workspaces and Metro configuration
+   - Shared UI package creation and platform abstraction patterns
+   - Critical fixes for common migration issues (HMRClient, babel plugins, circular dependencies)
+   - Universal TV app setup with Expo and react-native-tvos
+   - Component migration workflow and troubleshooting
+   - Version compatibility matrix and migration checklist
+
 ### When to Reference Steering Files
 
 - **Starting a new project** → Review `product.md` for overview and `structure.md` for architecture
@@ -67,6 +76,7 @@ Located in `steering/` directory:
 - **Adding new components or screens** → Check `structure.md` for patterns and conventions
 - **Working with specific technologies** → Consult `tech.md` for library usage and commands
 - **Troubleshooting setup issues** → Reference `tech.md` for environment requirements
+- **Migrating from Vega-only app** → Use `VEGA_TO_MONOREPO_MIGRATION_GUIDE.md` for step-by-step migration instructions
 
 These steering files complement the official sample repository and provide in-depth explanations of architectural decisions, implementation patterns, and best practices.
 
@@ -1217,7 +1227,7 @@ Complete guide for Fire TV Vega OS development:
 
 ### Steering Documentation
 
-This power includes three comprehensive steering files in the `steering/` directory:
+This power includes four comprehensive steering files in the `steering/` directory:
 
 **steering/product.md** - Product Overview
 - Complete overview of the Multi-TV app sample and its capabilities
@@ -1245,7 +1255,16 @@ This power includes three comprehensive steering files in the `steering/` direct
 - Development tools: ESLint, Prettier, Jest, Husky, Commitlint
 - Complete command reference for development, building, testing, and Vega CLI
 
-**Usage:** Reference these files alongside the official sample repository for comprehensive guidance on architecture, patterns, and implementation details.
+**steering/VEGA_TO_MONOREPO_MIGRATION_GUIDE.md** - Vega Migration Guide (Manual inclusion via `#VEGA_TO_MONOREPO_MIGRATION_GUIDE`)
+- Step-by-step migration from Fire TV Vega-only apps to multi-platform monorepo
+- Phase-by-phase approach: monorepo setup, shared UI package, universal TV app, platform abstraction
+- Critical configuration fixes (metro-source-map resolution, HMRClient polyfill, babel config)
+- Platform-specific file resolution patterns and avoiding circular dependencies
+- Remote control manager and video player service abstraction patterns
+- Component migration workflow with common issues and solutions
+- Version compatibility matrix and comprehensive migration checklist
+
+**Usage:** Reference these files alongside the official sample repository for comprehensive guidance on architecture, patterns, and implementation details. For Vega migration, include `#VEGA_TO_MONOREPO_MIGRATION_GUIDE` in your chat context.
 
 ### External Resources
 - [React Native TV (react-native-tvos)](https://github.com/react-native-tvos/react-native-tvos) - Core TV platform support

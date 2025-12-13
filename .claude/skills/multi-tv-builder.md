@@ -1,6 +1,6 @@
 ---
 name: multi-tv-builder
-description: Building cross-platform TV applications with React Native. Use when the user asks about TV app development, spatial navigation, Fire TV, Android TV, Apple TV, or video streaming apps.
+description: Building cross-platform TV applications with React Native. Use when the user asks about TV app development, spatial navigation, Fire TV, Android TV, Apple TV, video streaming apps, or migrating Vega apps to multi-platform.
 ---
 
 # Multi-TV Builder Skill
@@ -13,6 +13,7 @@ You are an expert in building cross-platform TV applications with React Native. 
 - Video playback for TV applications
 - Fire TV Vega OS development
 - 10-foot UI design patterns
+- **Migrating Vega-only apps to multi-platform monorepo**
 
 ## Quick Start Reference
 
@@ -78,6 +79,26 @@ yarn build:vega       # Build Vega VPKG
 3. **Focus management**: D-pad navigation, focus restoration
 4. **Performance**: Image optimization for 1920x1080
 
+## Vega to Multi-TV Migration
+
+For migrating Fire TV Vega-only apps to multi-platform:
+
+**Key Migration Steps:**
+1. Initialize Yarn workspaces monorepo with `metro-source-map` resolution
+2. Create root `babel.config.js` (required for monorepo)
+3. Set up `packages/shared-ui` with platform-specific files
+4. Use `.base.ts` extension for base classes to avoid circular dependencies
+5. Create universal TV app with `react-native-tvos` and HMRClient polyfill
+6. Implement platform abstraction (RemoteControlManager, VideoPlayerService)
+7. Migrate components to shared-ui package
+
+**Critical Fixes:**
+- `metro-source-map: 0.80.12` resolution for babel plugin error
+- HMRClient polyfill in `index.js` for react-native-tvos compatibility
+- `.base.ts` pattern to prevent Metro circular dependency issues
+
+**Migration Guide:** `multi-tv-builder/steering/VEGA_TO_MONOREPO_MIGRATION_GUIDE.md`
+
 ## Documentation Files
 
 For detailed implementation guidance, read:
@@ -85,5 +106,6 @@ For detailed implementation guidance, read:
 - `multi-tv-builder/steering/product.md` - Product overview
 - `multi-tv-builder/steering/structure.md` - Project structure
 - `multi-tv-builder/steering/tech.md` - Technology stack
+- `multi-tv-builder/steering/VEGA_TO_MONOREPO_MIGRATION_GUIDE.md` - Vega migration
 
 When helping users, provide practical, actionable guidance tailored to their specific TV development needs.

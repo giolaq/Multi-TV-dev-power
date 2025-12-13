@@ -117,6 +117,18 @@ yarn typecheck        # Type check
 
 Skills activate automatically based on context. For Apple TV issues, ask about "Siri Remote", "TVFocusGuideView", or "tvOS focus problems". For TMDB, ask about "movie API", "poster images", or "trending content".
 
+## Vega to Multi-TV Migration
+
+For migrating existing Fire TV Vega-only apps to the multi-platform monorepo architecture, see:
+- `multi-tv-builder/steering/VEGA_TO_MONOREPO_MIGRATION_GUIDE.md` - Step-by-step migration guide
+
+Key migration phases:
+1. **Monorepo Setup** - Yarn workspaces, root babel config, metro-source-map resolution
+2. **Shared UI Package** - Platform abstraction with `.base.ts` pattern to avoid circular deps
+3. **Universal TV App** - Expo + react-native-tvos with HMRClient polyfill
+4. **Platform Abstraction** - Remote control managers, video player services
+5. **Component Migration** - Move components to shared-ui, update imports
+
 ## Documentation
 
 See the following files for detailed guidance:
@@ -124,3 +136,4 @@ See the following files for detailed guidance:
 - `multi-tv-builder/steering/product.md` - Product overview
 - `multi-tv-builder/steering/structure.md` - Project structure details
 - `multi-tv-builder/steering/tech.md` - Technology stack reference
+- `multi-tv-builder/steering/VEGA_TO_MONOREPO_MIGRATION_GUIDE.md` - Vega migration guide
