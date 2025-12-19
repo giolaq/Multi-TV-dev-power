@@ -55,9 +55,22 @@ The assistant combines monorepo architecture, shared UI components, platform-spe
 │   ├── multi-tv-build.md     # Build commands
 │   └── multi-tv-platform.md  # Platform-specific guide
 └── skills/
-    └── multi-tv-builder.md   # TV builder skill definition
+    ├── apple-tv-troubleshooter/
+    │   └── SKILL.md          # Apple TV/tvOS specific guidance
+    ├── multi-tv-builder/
+    │   └── SKILL.md          # Core TV builder skill
+    └── tmdb-integration/
+        └── SKILL.md          # TMDB API integration guidance
 CLAUDE.md                      # Project context file
 ```
+
+### Available Skills
+
+| Skill | Description |
+|-------|-------------|
+| `multi-tv-builder` | Core TV app development guidance with complete knowledge base |
+| `apple-tv-troubleshooter` | tvOS-specific issues (Siri Remote, focus engine, TVEventHandler) |
+| `tmdb-integration` | TMDB API integration (movies, TV shows, images, search) |
 
 ---
 
@@ -138,14 +151,28 @@ yarn install && yarn bootstrap
 
 ```
 Multi-TV-dev-power/
-├── .claude/                  # Claude Code configuration
-│   ├── commands/            # Slash commands
-│   └── skills/              # Skill definitions
-├── multi-tv-builder/        # Kiro Power configuration
-│   ├── POWER.md            # Main documentation
-│   └── steering/           # AI steering files
-├── CLAUDE.md               # Claude Code project context
-└── README.md               # This file
+├── .claude/                         # Claude Code configuration
+│   ├── commands/                   # Slash commands
+│   │   ├── multi-tv-help.md
+│   │   ├── multi-tv-setup.md
+│   │   ├── multi-tv-build.md
+│   │   └── multi-tv-platform.md
+│   └── skills/                     # Skill definitions
+│       ├── apple-tv-troubleshooter/
+│       │   └── SKILL.md
+│       ├── multi-tv-builder/
+│       │   └── SKILL.md
+│       └── tmdb-integration/
+│           └── SKILL.md
+├── multi-tv-builder/               # Kiro Power configuration
+│   ├── POWER.md                   # Main documentation
+│   └── steering/                  # AI steering files
+│       ├── product.md
+│       ├── structure.md
+│       ├── tech.md
+│       └── VEGA_TO_MONOREPO_MIGRATION_GUIDE.md
+├── CLAUDE.md                       # Claude Code project context
+└── README.md                       # This file
 ```
 
 ---
@@ -162,6 +189,16 @@ Multi-TV-dev-power/
 
 ## Documentation
 
-- [CLAUDE.md](./CLAUDE.md) - Claude Code project context
+### For Claude Code Users
+
+- [CLAUDE.md](./CLAUDE.md) - Claude Code project context (auto-loaded)
+- [.claude/skills/](./.claude/skills/) - Skill definitions for specific domains
+  - `multi-tv-builder/SKILL.md` - Core TV app development with complete knowledge base
+  - `apple-tv-troubleshooter/SKILL.md` - tvOS-specific troubleshooting
+  - `tmdb-integration/SKILL.md` - TMDB API integration guidance
+- [.claude/commands/](./.claude/commands/) - Slash commands for quick access
+
+### For Kiro Users
+
 - [POWER.md](./multi-tv-builder/POWER.md) - Complete implementation guide (1300+ lines)
 - [Steering Files](./multi-tv-builder/steering/) - Detailed technical documentation
