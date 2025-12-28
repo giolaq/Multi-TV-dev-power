@@ -1,8 +1,8 @@
 ---
-name: "multi-tv-builder-complete"
-displayName: "Multi-TV Builder Complete"
-description: "Complete knowledge base for building production-ready cross-platform TV applications with React Native - supporting Android TV, Apple TV, Fire TV (Fire OS & Vega OS), and Web TV platforms with a single codebase"
-keywords: ["tv", "react-native", "android-tv", "apple-tv", "fire-tv", "vega", "tvos", "web-tv", "video", "streaming", "spatial-navigation", "monorepo", "expo", "migration", "typescript"]
+name: multi-tv-builder
+displayName: "Multi-TV Builder"
+description: "Complete knowledge base for building production-ready cross-platform TV applications with React Native - supporting Android TV, Apple TV, Fire TV (Fire OS & Vega OS), and Web TV platforms with a single codebase. Use when implementing TV apps, monorepo architecture, spatial navigation, video playback, platform-specific optimizations, or migrating from Vega to multi-platform."
+keywords: ["tv", "react-native", "android-tv", "apple-tv", "fire-tv", "vega", "tvos", "web-tv", "video", "streaming", "spatial-navigation", "monorepo", "expo", "migration", "typescript", "cross-platform", "remote-control", "focus-management"]
 author: "Giovanni Laquidara"
 ---
 
