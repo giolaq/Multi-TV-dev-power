@@ -1,6 +1,9 @@
 ---
 name: apple-tv-troubleshooter
-description: Expert troubleshooting for Apple TV (tvOS) React Native development. Use when users have issues with Siri Remote, focus management, TVEventHandler, TVFocusGuideView, ScrollView not scrolling, or tvOS-specific problems.
+displayName: "Apple TV Troubleshooter"
+description: "Expert troubleshooting for Apple TV (tvOS) React Native development. Use when users have issues with Siri Remote, focus management, TVEventHandler, TVFocusGuideView, ScrollView not scrolling, tvOS-specific problems, parallax animations, or tvOS vs Android TV differences."
+keywords: ["apple-tv", "tvos", "siri-remote", "focus-management", "TVEventHandler", "TVFocusGuideView", "ScrollView", "parallax", "tv-focus", "expo-tv", "react-native-tvos", "navigation", "focus-trap"]
+author: "Giovanni Laquidara"
 ---
 
 # Apple TV Troubleshooter

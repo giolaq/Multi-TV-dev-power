@@ -1,6 +1,9 @@
 ---
 name: tmdb-integration
-description: TMDB (The Movie Database) API integration for React Native TV streaming apps. Use when users need help with movie/TV show data, poster images, search, trending content, or video trailers from TMDB.
+displayName: "TMDB Integration"
+description: "TMDB (The Movie Database) API integration for React Native TV streaming apps. Use when users need help with movie/TV show data, poster images, search functionality, trending content, video trailers from TMDB, API authentication, rate limiting, or TypeScript types for TMDB responses."
+keywords: ["tmdb", "movie-database", "api-integration", "movie-data", "tv-shows", "poster-images", "search", "trending", "trailers", "authentication", "rate-limiting", "typescript", "axios", "react-hooks"]
+author: "Giovanni Laquidara"
 ---
 
 # TMDB Integration Skill
